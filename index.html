@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life is Health</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/logo.png" class="logo" alt="">
+        <nav id="nav">
+            <ul id="menu">
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#imc">IMC - O que é?</a></li>
+                <li><a href="#calculadora">Calcular IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div id="quem-somos">
+            <img src="img/banner.jpg" id="banner">
+            <p>
+                O Life is Health é um espaço digital com o objetivo de produzir informação confiável que ajude a
+                esclarecer
+                dúvidas sobre saúde, nutrição e bem-estar, utilizando linguagem simples mas com responsabilidade e
+                competência técnica.
+            </p>
+        </div>
+        <div id="imc">
+            <p>
+                IMC significa Índice de Massa Corporal e é um parâmetro utilizado para saber se o peso está de acordo
+                com a
+                altura, o que pode interferir diretamente na saúde e qualidade de vida da pessoa. Assim, a partir do
+                resultado do IMC é possível saber também se a pessoa está dentro do peso ideal e também identificar
+                sobrepeso, obesidade ou desnutrição em crianças, adolescentes, adultos ou idosos.
+            </p>
+            <table class="imc-table">
+                <thead>
+                    <th>IMC</th>
+                    <th>Classificação</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            < 18,5</td>
+                        <td> Magreza</td>
+                    </tr>
+                    <tr>
+                        <td>18,5 a 24,9</td>
+                        <td>Saudável</td>
+                    </tr>
+                    <tr>
+                        <td>25,0 a 29,9</td>
+                        <td>Sobrepeso</td>
+                    </tr>
+                    <tr>
+                        <td>30, 0 a 34,9</td>
+                        <td>Obesidade Grau I</td>
+                    </tr>
+                    <tr>
+                        <td>35,0 a 39,9</td>
+                        <td>Obesidade Severa Grau II</td>
+                    </tr>
+                    <tr>
+                        <td> > 40,0</td>
+                        <td>Obesidade Mórbida Grau III</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="calculadora">
+            <h2>Calculadora - IMC</h2>
+            <label for="">Insira seu nome: *</label>
+            <input type="text" id="nome" required>
+            <label for="">Insira sua altura: (CM) *</label>
+            <input type="number" id="altura" required placeholder="Ex: 1,70">
+            <label for="">Insira seu peso: (KG) *</label>
+            <input type="number" id="peso" required placeholder="Ex: 69,2">
+            <button onclick="calcular()">Calcular</button>
+            <h3 id="resultado"></h3>
+        </div>
+    </main>
+    <button id="back-to-top">Voltar ao topo</button>
+    <footer class="footer">
+        <p>Copyright © 2022 Life is Health Brasil. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
